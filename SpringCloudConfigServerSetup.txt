@@ -1,0 +1,36 @@
+1)  Create Git remote repository 
+
+
+2) Create Spring cloud config server project
+
+3) Enable @EnableConfigServer annotation on root application class
+
+4) create application.yml file with below configuration
+
+server:
+  port: 8090
+  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ksr4innovation/springcloudconfigserver
+          #username:
+          #password:
+          search-paths:
+          - emp*,dept*  
+
+		  
+5) Access below from postman for to access default application properties file 
+
+http://localhost:8090/application/default
+
+to access  subfolders properties below urls 
+
+http://localhost:8090/empquery/prod
+
+http://localhost:8090/empquery/dev
+
+http://localhost:8090/empquery/default
+
