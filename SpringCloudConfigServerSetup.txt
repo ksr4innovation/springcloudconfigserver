@@ -34,3 +34,12 @@ http://localhost:8090/empquery/dev
 
 http://localhost:8090/empquery/default
 
+spring boot 2.0.4 bus refresh endpoint :
+
+http://localhost:8020/actuator/bus-refresh
+
+
+spring boot 1.5.14 bus refresh endpoint :
+
+http://localhost:8020/bus/refresh
+
